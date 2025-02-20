@@ -5,7 +5,7 @@ import Section from "../ui/section";
 
 const Certifications = () => {
   return (
-    <Section title="Licenses &amp; certifications">
+    <Section title="Certifications">
       <ul className="space-y-2">
         {certificationHistory.map((certification, index) => (
           <li key={`${certification.title}_${index}`}>

@@ -8,9 +8,14 @@ type Props = {
 const School = ({ education }: Props) => {
   return (
     <>
-      <div className="font-semibold">{education.institution}</div>
-      <div>{education.diploma}, {education.profile}</div>
-      <Period className="text-sm" {...education.period} />
+      <div className="grid grid-cols-[1fr_auto]">
+        <div className="text-black text-base">{education.institution}</div>
+        <div>{education.location}</div>
+      </div>
+      <div className="grid grid-cols-[1fr_auto]">
+        <div>{education.diploma}, {education.profile}</div>
+        <Period {...education.period} />
+      </div>
     </>
   );
 };

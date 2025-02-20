@@ -1,19 +1,20 @@
-import { Language } from "@/types/language";
+import { Language } from '@/types/language';
 
 export const languageLevels = [
   'Beginner',
   'Elementary',
   'Intermediate',
   'Advanced',
-  'Native / Bilingual'
+  'Native / Bilingual',
 ];
 
 export const spokenLanguages: Language[] = [
   {
     name: 'Romanian',
-    level: 4
-  }, {
+    level: 5,
+  },
+  {
     name: 'English',
-    level: 3
-  }
+    level: 4,
+  },
 ];

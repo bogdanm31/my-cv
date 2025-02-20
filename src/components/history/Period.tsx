@@ -20,7 +20,7 @@ const Period = ({
     <div className={classNames("space-x-2", className)}>
       <span>{when}</span>
       {showLongevity && longevity && (
-        <span className="text-gray-600">({ longevity })</span>
+        <span className="text-gray-600">({longevity})</span>
       )}
     </div>
   );

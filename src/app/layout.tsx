@@ -9,11 +9,14 @@ export default function RootLayout({ children }) {
       </head>
       <body className={classNames(
         "mx-auto max-w-3xl",
-        "p-6 tracking-tight space-y-8",
+        "p-6 tracking-tight space-y-6",
+        "text-gray-700 text-sm",
         "bg-white border border-slate-100 print:border-0",
-      )}>
+      )}
+        style={{ fontFamily: '"PT Sans", Arial, Helvetica, "Noto Sans Devanagari", "Noto Sans CJK SC Thin", "Noto Sans SC", "Noto Sans Hebrew", "Noto Sans Bengali", sans-serif' }}
+      >
         {children}
       </body>
-    </html>
+    </html >
   );
 }

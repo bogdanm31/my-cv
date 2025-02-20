@@ -6,7 +6,7 @@ import Section from "../ui/section";
 const History = () => {
   return (
     <Section title="Work experience">
-      <ul className="space-y-5">
+      <ul className="space-y-6">
         {workExperiences.map((exp, index) => (
           <li key={`${exp.company}_${index}`}>
             <Experience experience={exp} />

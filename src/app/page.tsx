@@ -18,9 +18,9 @@ export default function Page() {
       <Head />
       <Intro />
       <History />
+      <Languages />
       <Education />
       {/* <Certifications /> */}
-      <Languages />
       <Skills />
     </>
   );

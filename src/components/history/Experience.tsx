@@ -9,16 +9,18 @@ type Props = {
 
 const Experience = ({ experience }: Props) => {
   return (
-    <div className="space-y-1">
-      <div className="text-lg font-semibold">{experience.company}</div>
+    <div className="break-inside-avoid">
+      <div className="text-base mb-[2px]">{experience.company}</div>
       <ul>
-      {experience.roles.map(role =>
-        <li className="space-y-1" key={role.period.started}>
-          <div className="font-semibold">{role.name}</div>
-          <Period {...role.period} showLongevity={true} />
-          <RoleSummary summary={role.summary} skillsUsed={role.skillsUsed} />
-        </li>
-      )}
+        {experience.roles.map(role =>
+          <li className="space-y-[2px]" key={role.period.started}>
+            <div className="grid grid-cols-[1fr_auto]">
+              <div className="text-black">{role.name}</div>
+              <Period {...role.period} />
+            </div>
+            <RoleSummary summary={role.summary} skillsUsed={role.skillsUsed} />
+          </li>
+        )}
       </ul>
     </div>
   );

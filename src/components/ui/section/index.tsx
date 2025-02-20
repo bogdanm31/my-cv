@@ -9,7 +9,7 @@ type Props = {
 const Section = ({ children, className, title }: Props) => {
   return (
     <section className={className}>
-      <div className="text-2xl font-semibold mb-2">{title}</div>
+      <div className="text-xl font-semibold text-black mb-1 pb-1 border-b">{title}</div>
       {children}
     </section>
   );

@@ -1,10 +1,10 @@
-import { Period } from "./date";
+import { Period } from './date';
 
 export type WorkSummary = (string | string[])[];
 
 export type Role = {
   name: string;
-  period: Period
+  period: Period;
   summary: WorkSummary;
   skillsUsed: string[];
 };
