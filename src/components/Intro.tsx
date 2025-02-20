@@ -3,12 +3,7 @@ import Section from "./ui/section";
 const Intro = () => {
   return (
     <Section title="Summary">
-      <div>
-        I am a frontend developer with experience on backend as well. With a blend of creativity and analytical skills, I am a detail-oriented team player committed to delivering high quality results.
-      </div>
-      <div>
-        I am available for travel 0-10%.
-      </div>
+      I am a frontend developer with strong focus on creating intuitive and visually appealing user interfaces, passionate about optimizing performance and ensuring cross-browser compatibility. With a blend of creativity and analytical skills, I am detail-oriented and driven by desire to solve complex problems, delivering high quality results.
     </Section>
   );
 };
