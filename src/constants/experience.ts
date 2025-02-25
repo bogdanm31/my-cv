@@ -30,7 +30,7 @@ export const workExperiences: WorkExperience[] = [
         summary: [
           [
             "Hosted the client's application, a portal for virtual machines provisioning",
-            'Developmed or updated sections within the provisioning process for enhanced user experience.',
+            'Developed or updated sections within the provisioning process for enhanced user experience.',
             'Led interface redesign efforts to enhance the overall look and feel of the application.',
             'Actively participated in code reviews to ensure high-quality standards were met',
           ],
