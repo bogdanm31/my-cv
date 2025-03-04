@@ -15,7 +15,7 @@ const Experience = ({ experience }: Props) => {
         {experience.roles.map(role =>
           <li className="space-y-[2px]" key={role.period.started}>
             <div className="grid grid-cols-[1fr_auto]">
-              <div className="text-black">{role.name}</div>
+              <div className="text-black font-semibold">{role.name}</div>
               <Period {...role.period} />
             </div>
             <RoleSummary summary={role.summary} skillsUsed={role.skillsUsed} />

@@ -5,7 +5,7 @@ export const languageLevels = [
   'Elementary',
   'Intermediate',
   'Advanced',
-  'Native / Bilingual',
+  'Native',
 ];
 
 export const spokenLanguages: Language[] = [
