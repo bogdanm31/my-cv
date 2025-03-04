@@ -59,9 +59,10 @@ export const workExperiences: WorkExperience[] = [
         name: 'Frontend developer',
         summary: [
           [
-            'Rebuilt app interfaces, resulting in enhanced user experience and increased customer satisfaction.',
-            'Created custom jQuery plugins.',
+            'Rebuilt app interfaces from scratch, resulting in enhanced user experience and increased customer satisfaction.',
             'Created visually appealing and interactive charts with D3, providing valuable data insights for clients.',
+            'Applied accessibility guidelines, increasing applications usability for a wider range of customers.',
+            'Created custom jQuery plugins, in order to make the content more interactive with smooth transitioning effects.',
             'Conducted thorough code reviews, ensuring high-quality standards and identifying areas for improvement.',
           ],
         ],
@@ -132,7 +133,7 @@ export const workExperiences: WorkExperience[] = [
         name: 'PHP developer',
         summary: [
           [
-            "I built web applications based on customer's requirements.",
+            "Built web applications based on customer's requirements.",
             'The experience at Tesseract Romania helped me not only acquire backend skills, but also frontend skills.',
           ],
         ],

@@ -18,8 +18,9 @@ const Languages = () => {
                 <i className={classNames(
                   'w-8 h-2 rounded-lg',
                   'inline-block',
-                  i < language.level ? 'bg-black' : 'bg-gray-400'
-                )}></i>
+                  i < language.level ? 'bg-cyan-700' : 'bg-cyan-400'
+                )}
+                key={i}></i>
               ))}
             </div>
           </li>
