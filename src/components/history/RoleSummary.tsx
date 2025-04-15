@@ -1,4 +1,5 @@
 import { WorkSummary } from "@/types/experience";
+import SkillsList from "../skills/SkillsList";
 
 type Props = {
   skillsUsed: string[];
@@ -12,14 +13,14 @@ const RoleSummary = ({ skillsUsed, summary }: Props) => {
         {summary.map((section, index) =>
           typeof section === 'string'
             ? <li key={index}>{section}</li>
-            : <ul key={index} className="list-disc list-inside ml-1">
+            : <ul key={`${index}_ul`} className="list-disc list-inside ml-1">
               {section.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
         )}
       </ul>
-      {/* <div className="pt-2"><span>Skills used:</span> {skillsUsed.join(', ')}</div> */}
+      <SkillsList label="Skills used" skills={skillsUsed} />
     </>
   );
 };

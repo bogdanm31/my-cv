@@ -1,8 +1,7 @@
-export const skills = [
+export const techSkills = [
   'React',
   'Vue',
   'JavaScript',
-  'Next.js',
   'ES6',
   'Vuex',
   'JSON',
@@ -17,4 +16,9 @@ export const skills = [
   'MySQL',
   'Node',
   'Git'
+];
+
+export const softSkills = [
+  'Teamwork',
+  'Communication'
 ];

@@ -1,4 +1,5 @@
 import { WorkExperience } from "@/types/experience";
+import { useRoleContext } from "@/context/RoleContext";
 
 import Period from "./Period";
 import RoleSummary from "./RoleSummary";
@@ -8,6 +9,8 @@ type Props = {
 };
 
 const Experience = ({ experience }: Props) => {
+  const { jobDetails } = useRoleContext();
+
   return (
     <div className="break-inside-avoid">
       <div className="text-base mb-[2px]">{experience.company}</div>
@@ -18,7 +21,7 @@ const Experience = ({ experience }: Props) => {
               <div className="text-black font-semibold">{role.name}</div>
               <Period {...role.period} />
             </div>
-            <RoleSummary summary={role.summary} skillsUsed={role.skillsUsed} />
+            {jobDetails === 'extended' ? <RoleSummary summary={role.summary} skillsUsed={role.skillsUsed} /> : null}
           </li>
         )}
       </ul>
